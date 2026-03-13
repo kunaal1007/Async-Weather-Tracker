@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1f5e;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.main-layout {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.right-column {
+  flex: 1;
+}
+
+.card {
+  background-color: white;
+  color: #1a1f5e;
+  border-radius: 8px;
+  padding: 16px;
+  height: 100%;
+}
+
+.card h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.search-row {
+  display: flex;
+  gap: 8px;
+}
+
+.search-row input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.search-row button {
+  background-color: #e85d04;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.search-row button:hover {
+  background-color: #c44d00;
+}
+
+#history-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 13px;
+  color: #999;
+}
+
+.history-tag {
+  background-color: #e85d04;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+}
+
+.history-tag:hover {
+  background-color: #c44d00;
+}
+
+#weather-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+#error-msg {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+#weather-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  display: none;
+}
+
+#weather-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+#weather-table td:first-child {
+  font-weight: bold;
+  width: 40%;
+  color: #1a1f5e;
+}
+
+.console-box {
+  background-color: #1a1f5e;
+  border: 2px solid #3a4080;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.console-box h2 {
+  font-size: 13px;
+  color: #aab0ff;
+  margin-bottom: 8px;
+}
+
+#console-output {
+  font-family: monospace;
+  font-size: 12px;
+  min-height: 80px;
+  max-height: 160px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.log-sync  { color: #7effa0; }
+.log-async { color: #ffdd57; }
+.log-error { color: #ff6b6b; }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>⛅ Async Weather Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>⛅ Async Weather Tracker</h1>
+
+  <div class="main-layout">
+
+    <div class="left-column">
+
+      <div class="card">
+        <h2>Search City</h2>
+        <div class="search-row">
+          <input type="text" id="city-input" placeholder="Enter city..." />
+          <button onclick="searchWeather()">Search</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Search History</h2>
+        <div id="history-list">No history yet.</div>
+      </div>
+
+    </div>
+
+    <div class="right-column">
+      <div class="card">
+        <h2>Weather Info</h2>
+        <p id="weather-placeholder">Search a city to see weather.</p>
+        <p id="error-msg">City not found. Please try again.</p>
+        <table id="weather-table">
+          <tr><td>City</td>     <td id="w-city"></td></tr>
+          <tr><td>Temp</td>     <td id="w-temp"></td></tr>
+          <tr><td>Weather</td>  <td id="w-weather"></td></tr>
+          <tr><td>Humidity</td> <td id="w-humidity"></td></tr>
+          <tr><td>Wind</td>     <td id="w-wind"></td></tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="console-box">
+    <h2>Console – Event Loop</h2>
+    <div id="console-output">Waiting for search...</div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
